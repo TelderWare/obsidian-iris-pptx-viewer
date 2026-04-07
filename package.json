@@ -1,0 +1,19 @@
+{
+  "name": "pptx-viewer",
+  "version": "1.0.0",
+  "description": "View PowerPoint (`.pptx`) files directly inside Obsidian with slide navigation and faithful rendering of text, shapes, and images.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "esbuild": "^0.27.4",
+    "jszip": "^3.10.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.5.207"
+  }
+}

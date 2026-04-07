@@ -1,0 +1,90 @@
+/* ── PPTX Viewer Styles ── */
+
+/* Ensure Obsidian's view-content fills the tab */
+.view-content:has(.pptx-viewer-container) {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.pptx-viewer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: var(--background-primary);
+  overflow: hidden;
+}
+
+/* ── Toolbar ── */
+.pptx-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  flex-shrink: 0;
+}
+
+.pptx-nav-btn {
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.pptx-nav-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pptx-nav-btn:hover {
+  color: var(--text-normal);
+}
+
+.pptx-slide-counter {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  margin: 0 4px;
+}
+
+/* ── Slide Area ── */
+.pptx-slide-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 48px;
+}
+
+.pptx-slide-canvas {
+}
+
+/* ── Loading / Error States ── */
+.pptx-loading,
+.pptx-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.pptx-loading-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--text-faint);
+  border-top-color: var(--text-muted);
+  border-radius: 50%;
+  animation: pptx-spin 0.7s linear infinite;
+}
+
+@keyframes pptx-spin {
+  to { transform: rotate(360deg); }
+}
+

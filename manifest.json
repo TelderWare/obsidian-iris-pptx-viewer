@@ -1,0 +1,9 @@
+{
+  "id": "pptx-viewer",
+  "name": "PPTX Viewer",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "View PowerPoint (.pptx) files directly inside Obsidian with slide navigation and faithful rendering.",
+  "author": "mgodd",
+  "isDesktopOnly": true
+}
